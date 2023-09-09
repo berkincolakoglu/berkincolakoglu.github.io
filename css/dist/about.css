@@ -1,0 +1,90 @@
+:root {
+  --first-color: #1A1A2E;
+  --second-color: #0F3460;
+  --third-color: #16213E;
+  --fourth-color: #E94560;
+  --font-color: rgba(255, 255, 255, 0.8);
+  --lorem-font-color: rgba(15, 52, 96, 0.3);
+}
+
+body header #photo {
+  height: 160px;
+  border-radius: 23%;
+  margin: 4em 2em;
+}
+body .hero {
+  padding: 0;
+  margin-bottom: 120px;
+  align-items: center;
+}
+body .hero #info {
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+  width: 80vw;
+  height: 60vh;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 0.2em;
+}
+body .hero #info span {
+  font-weight: 500;
+}
+body .hero #photo2 {
+  display: none;
+}
+
+@media only screen and (min-height: 840px) {
+  body .hero {
+    margin-bottom: 30vh;
+  }
+  body .hero #info {
+    font-size: 27px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body header #photo {
+    display: none;
+  }
+  body .hero {
+    padding: 0;
+    margin: 0 !important;
+    background-color: red;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0;
+  }
+  body .hero #photo2 {
+    display: block;
+    height: 200px;
+    border-radius: 20%;
+    margin: 0 !important;
+  }
+  body .hero p {
+    background-color: rebeccapurple;
+    margin: 0 !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body .hero {
+    margin-top: 100px;
+  }
+  body .hero #info {
+    width: 40vw;
+    font-size: 34px;
+    line-height: 50px;
+  }
+  body .hero #photo2 {
+    height: 300px;
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body .hero {
+    align-items: center;
+  }
+  body .hero p {
+    margin-top: 50px !important;
+  }
+}

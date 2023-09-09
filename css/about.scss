@@ -1,0 +1,107 @@
+:root{
+    --first-color: #1A1A2E;
+    --second-color: #0F3460;
+    --third-color: #16213E;
+    --fourth-color: #E94560;
+    --font-color: rgba(255, 255, 255, 0.8);
+    --lorem-font-color: rgba(15, 52, 96, 0.3);
+}
+body{
+    header{
+        #photo{
+            height: 160px;
+            border-radius: 23%;
+            margin: 4em 2em;
+        }
+        nav{
+            ul{
+                li{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .hero{
+        padding: 0;
+        margin-bottom: 120px;
+        align-items: center;
+        #info{
+            padding: 0;
+            margin: 0;
+            font-size: 22px;
+            text-align: center;
+            width: 80vw;
+            font-weight: 300;
+            color: white;
+            letter-spacing: 0.2em;
+            span{
+                font-weight: 500;
+            }
+        }
+        #photo2{
+            display: none;
+        }
+    }
+}
+@media only screen and (min-height: 840px){
+    body{
+        .hero{
+            margin-bottom: 30vh;
+            #info{
+                font-size: 27px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    body{
+        justify-content: flex-start;
+        header{
+            #photo{
+                display: none;
+            }
+        }
+        .hero{
+            padding: 0;
+            margin: 0!important;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 0;
+            #photo2{
+                display: block;
+                height: 200px;
+                border-radius: 20%;
+                margin: 50px!important;
+            }
+            p{
+                margin: 10px!important;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px){
+    body{
+        .hero{
+            margin-top: 100px;
+            flex-direction: row;
+            margin: 0 100px!important;
+            #info{
+                width: 40vw;
+                font-size: 34px;
+                line-height: 50px;
+            }
+            #photo2{
+                height: 250px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1440px){
+    body{
+        .hero{
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 150px!important;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+:root{
+    --first-color: #1A1A2E;
+    --second-color: #0F3460;
+    --third-color: #16213E;
+    --fourth-color: #E94560;
+    --font-color: rgba(255, 255, 255, 0.8);
+    --lorem-font-color: rgba(15, 52, 96, 0.3);
+}
+body{
+    justify-content:flex-start;
+    header{
+        justify-content: right;
+        nav{
+            ul{
+                li{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .hero{
+        justify-content: center;
+        table{
+            tr{
+                .svg{
+                    text-align: center;
+                    img{
+                        padding-top: 9px;
+                    }
+                }
+                td{
+                    font-size: 19px;
+                    padding: 10px 8px;
+                    a{
+                        color: white;
+                        letter-spacing: 0.1em;
+                        font-weight: 300;
+                        &:hover{
+                            color: var(--fourth-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    body{
+        .hero{
+            table{
+                margin-top: 100px;
+                a{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

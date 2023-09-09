@@ -1,0 +1,33 @@
+body {
+  justify-content: flex-start;
+}
+body header {
+  justify-content: right;
+}
+body .hero {
+  justify-content: center;
+}
+body .hero table tr .svg {
+  text-align: center;
+}
+body .hero table tr .svg img {
+  padding-top: 9px;
+}
+body .hero table tr td {
+  font-size: 19px;
+  padding: 10px 8px;
+}
+body .hero table tr td a {
+  color: white;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1024px) {
+  body .hero table {
+    margin-top: 100px;
+  }
+  body .hero table a {
+    font-size: 40px;
+  }
+}
